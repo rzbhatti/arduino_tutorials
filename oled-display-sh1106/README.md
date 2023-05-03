@@ -80,4 +80,7 @@ https://www.youtube.com/watch?v=UlYrnUYpkl4&ab_channel=SaravananAL
 https://www.youtube.com/watch?v=hjM0dLTwoIU&ab_channel=TechVegan  
 
 ## Other Tutorials
-https://www.buydisplay.com/i2c-blue-1-3-inch-oled-display-module-128x64-arduino-raspberry-pi
+* https://www.buydisplay.com/i2c-blue-1-3-inch-oled-display-module-128x64-arduino-raspberry-pi
+* https://www.instructables.com/Fun-With-OLED-Display-and-Arduino
+* https://diyusthad.com/2019/02/display-images-in-oled-display.html
+
