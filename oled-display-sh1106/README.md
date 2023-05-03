@@ -20,7 +20,7 @@ Nano: SDA (A4); SCL (A5);
 MEGA: SDA (20); SCL (21);  
 Leonardo: SDA (20); SCL (21);  
 
-## Imortant Notes
+## Important Notes
 1.3 inch OLED Display Module based on I2C 128X64 OLED SH1106 require the following: 
 * Include the `U8glib.h`
     ```c++
@@ -50,7 +50,7 @@ Uncomment the following line
 ```c++
 U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_NONE);	// I2C / TWI 
 ```
-Comiple, load and run the program to UNO
+Compile, load and run the program to UNO
 
 You may try other examples like `U8g Logo` etc
 
@@ -73,7 +73,7 @@ Adafruit_SH110X -> OLED_QTPY_SH1106 -> SH1106_128x64_i2c_QTPY
 Adafruit_SH1106G display = Adafruit_SH1106G(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 ```
 
-Comiple, load and run the program to UNO
+Compile, load and run the program to UNO
 
 
 ## YouTube Videos
