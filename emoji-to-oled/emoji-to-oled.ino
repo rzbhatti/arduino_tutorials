@@ -1,6 +1,6 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
-#include <Adafruit_SH110X.h>
+#include <Adafruit_SH1106.h>
 
 /* Uncomment the initialize the I2C address , uncomment only one, If you get a totally blank screen try the other*/
 #define i2c_Address 0x3c //initialize with the I2C addr 0x3C Typically eBay OLED's
@@ -8,8 +8,8 @@
 
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
-#define OLED_RESET 4   //   QT-PY / XIAO
-Adafruit_SH1106G display = Adafruit_SH1106G(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+#define OLED_RESET 4
+Adafruit_SH1106 display(OLED_RESET);
 
 // 'happy', 128x44px
 const unsigned char emoji [] PROGMEM = {
@@ -204,6 +204,8 @@ const int pinLED = 13;
 int IRvalueA = 0;
 int IRvalueD = 0;
 
+
+
 void setup()
 {
   Serial.begin(9600);
@@ -211,7 +213,7 @@ void setup()
   pinMode(pinIRa,INPUT);
   pinMode(pinLED,OUTPUT);
   // setup oled display
-  display.begin(i2c_Address, true); // Address 0x3C default
+  display.begin(SH1106_SWITCHCAPVCC, 0x3C); 
   display.clearDisplay(); /* Clear display */
   display.display();
 }
@@ -224,19 +226,19 @@ void loop(void) {
     digitalWrite(LED_BUILTIN, HIGH);
     display.clearDisplay();
     display.setTextSize(2);
-    display.setTextColor(SH110X_WHITE);
+    display.setTextColor(WHITE);
     display.setCursor(50, 2);
     display.println(IRvalueA);
-    display.drawBitmap(42, 20, happy, 44, 44, SH110X_WHITE);
+    display.drawBitmap(42, 20, happy, 44, 44, WHITE);
   }
   else {
     digitalWrite(LED_BUILTIN, LOW);
     display.clearDisplay();
     display.setTextSize(2);
-    display.setTextColor(SH110X_WHITE);
+    display.setTextColor(WHITE);
     display.setCursor(50, 2);
     display.println(IRvalueA);
-    display.drawBitmap(42, 20, scared, 44, 44, SH110X_WHITE);
+    display.drawBitmap(42, 20, scared, 44, 44, WHITE);
   }
   display.display();
 
