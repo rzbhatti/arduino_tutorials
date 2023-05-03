@@ -10,6 +10,8 @@ Because the OLED display uses I2C communication protocol, wiring is very simple.
 | GND|	GND|
 |SCL |	SCL or A5 |
 | SDA	| SDA or A4 |
+
+
 ![Connection](connection.png)   
 
 If you’re using a different Arduino board, make sure you check the correct I2C pins:
