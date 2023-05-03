@@ -21,20 +21,19 @@ MEGA: SDA (20); SCL (21);
 Leonardo: SDA (20); SCL (21);  
 
 ## Important Notes
-1.3 inch OLED Display Module based on I2C 128X64 OLED SH1106 require the following: 
-* Include the `U8glib.h`
-    ```c++
-    #include "U8glib.h"
-    ```
-* I2C addess is 0x3C
-    ```c++
-    #define i2c_Address 0x3c
-    ```
+1.3 inch OLED Display Module based on I2C 128X64 OLED SH1106 require the following:  
 
-* U8g constructor   
-    ```c++
-    U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_NONE);
-    ```
+```c++
+// Include the U8glib.h  
+#include "U8glib.h"  
+// I2C addess is 0x3C  
+#define i2c_Address 0x3c  
+// U8g constructor is uncommented  
+U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_NONE);
+// Reset pin
+#define OLED_RESET 4
+```
+   
 
 # Working with  `U8glib` (Universal 8x8 Graphics Library)
 In Arduino IDE `Tools` menu go to  `Manage Libraries...`. In the search bar search for `U8glib` by Oliver and install all libraries. 
