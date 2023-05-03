@@ -75,8 +75,8 @@ Comiple, load and run the program to UNO
 
 
 ## YouTube Videos
-https://www.youtube.com/watch?v=UlYrnUYpkl4&ab_channel=SaravananAL
-https://www.youtube.com/watch?v=hjM0dLTwoIU&ab_channel=TechVegan
+https://www.youtube.com/watch?v=UlYrnUYpkl4&ab_channel=SaravananAL  
+https://www.youtube.com/watch?v=hjM0dLTwoIU&ab_channel=TechVegan  
 
 ## Other Tutorials
 https://www.buydisplay.com/i2c-blue-1-3-inch-oled-display-module-128x64-arduino-raspberry-pi
