@@ -1,5 +1,7 @@
 # TCRT5000 IR Sensor Proximity Obstacle avoidance sensor 
 
+![TCRT5000-IR-Sensor](TCRT5000-IR-Sensor.jpg)
+
 ## Quick Tutorials
 * https://projecthub.arduino.cc/abhilashpatel121/60cc9216-3a77-4766-a3a2-9b02d01cec84 
 
