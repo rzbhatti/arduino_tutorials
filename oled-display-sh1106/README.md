@@ -30,18 +30,12 @@ Leonardo: SDA (20); SCL (21);
 #define i2c_Address 0x3c  
 // U8g constructor is uncommented  
 U8GLIB_SH1106_128X64 u8g(U8G_I2C_OPT_NONE);
-// Reset pin
-#define OLED_RESET 4
 ```
    
 
 # Working with  `U8glib` (Universal 8x8 Graphics Library)
 In Arduino IDE `Tools` menu go to  `Manage Libraries...`. In the search bar search for `U8glib` by Oliver and install all libraries. 
-Optional References:  
-* https://code.google.com/archive/p/u8glib  
-* https://github.com/olikraus/u8glib  
-* https://github.com/olikraus/U8glib_Arduino/releases  
-* https://content.instructables.com/FPD/9MOK/IWMR3N28/FPD9MOKIWMR3N28.zip  
+ 
 
 ## Hello World Examples
 `File` -> `Examples` -> `U8glib` -> `HelloWorld`
@@ -53,14 +47,22 @@ Compile, load and run the program to UNO
 
 You may try other examples like `U8g Logo` etc
 
+### Other Optional References:  
+* https://code.google.com/archive/p/u8glib  
+* https://github.com/olikraus/u8glib  
+* https://github.com/olikraus/U8glib_Arduino/releases  
+* https://content.instructables.com/FPD/9MOK/IWMR3N28/FPD9MOKIWMR3N28.zip 
 
 
-# Working with `Adafruit` SH110X Library
-In Arduino IDE `Tools` menu go to  `Manage Libraries...`. In the search bar search for `Adafruit SH110X` and install all libraries. 
+# Working with [Adafruit_GFX library for Arduino](https://learn.adafruit.com/adafruit-gfx-graphics-library/overview)
+
+In Arduino IDE `Tools` menu go to  `Manage Libraries...`. In the search bar search for `Adafruit GFX` and install all libraries. 
 * Adafruit GFX Library@1.11.5
-* Adafruit SH110X@2.1.8 
+* Adafruit BusIO@2.1.8 
 
-Once done look for `Adafruit SH110X` under the `File` menu go to `Examples`. In that pick the following sktech
+Download and install [Adafruit SH1106 library](https://github.com/wonho-maker/Adafruit_SH1106) 
+
+Once done look for `Adafruit SH1106` under the `File` menu go to `Examples`. In that pick the following sktech
 Adafruit_SH110X -> OLED_QTPY_SH1106 -> SH1106_128x64_i2c_QTPY
 
 **Note: double check the following lines:** 
