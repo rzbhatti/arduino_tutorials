@@ -47,6 +47,8 @@ Compile, load and run the program to UNO
 
 You may try other examples like `U8g Logo` etc
 
+## Note: `U8g2` library Works too
+
 ### Other Optional References:  
 * https://code.google.com/archive/p/u8glib  
 * https://github.com/olikraus/u8glib  
@@ -55,15 +57,19 @@ You may try other examples like `U8g Logo` etc
 
 
 # Working with [Adafruit_GFX library for Arduino](https://learn.adafruit.com/adafruit-gfx-graphics-library/overview)
-
+### Step 1:
 In Arduino IDE `Tools` menu go to  `Manage Libraries...`. In the search bar search for `Adafruit GFX` and install all libraries. 
 * Adafruit GFX Library@1.11.5
 * Adafruit BusIO@2.1.8 
 
-Download and install [Adafruit SH1106 library](https://github.com/wonho-maker/Adafruit_SH1106) 
+### Step 2:
+Download and install [Adafruit SH1106 library](https://github.com/wonho-maker/Adafruit_SH1106) -> [Zip File](https://github.com/wonho-maker/Adafruit_SH1106/archive/refs/heads/master.zip)     
 
-Once done look for `Adafruit SH1106` under the `File` menu go to `Examples`. In that pick the following sktech
-Adafruit_SH110X -> OLED_QTPY_SH1106 -> SH1106_128x64_i2c_QTPY
+In Arduino IDE `Sketch` menu go to  `Include Library` -> `Add .ZIP Library...`, and navigate to the downloaded file `Adafruit_SH1106-master.zip` in the `Downloads`.    
+
+Once the library is installed look for `Adafruit SH1106_master` under the `File` menu go to `Examples`. In that pick the sketch `SH1106_128x64_i2c`  
+
+Compile, load and run the program to UNO  
 
 **Note: double check the following lines:** 
 ```c++
@@ -71,10 +77,7 @@ Adafruit_SH110X -> OLED_QTPY_SH1106 -> SH1106_128x64_i2c_QTPY
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
 #define OLED_RESET 4   //   QT-PY / XIAO  <--- THIS LINE MAY NOT BE CORRECT OUT OF THE BOX -->
-Adafruit_SH1106G display = Adafruit_SH1106G(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 ```
-
-Compile, load and run the program to UNO
 
 
 ## YouTube Videos
