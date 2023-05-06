@@ -222,7 +222,7 @@ void loop(void) {
   IRvalueA = analogRead(pinIRa);
   IRvalueD = digitalRead(pinIRd);
 
-  if (IRvalueD == LOW) {
+  if (IRvalueD == HIGH) {
     digitalWrite(LED_BUILTIN, HIGH);
     display.clearDisplay();
     display.setTextSize(2);
@@ -242,6 +242,6 @@ void loop(void) {
   }
   display.display();
 
-  delay(100);
+  // delay(100);
   
 }

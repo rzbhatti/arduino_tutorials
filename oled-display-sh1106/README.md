@@ -47,7 +47,9 @@ Compile, load and run the program to UNO
 
 You may try other examples like `U8g Logo` etc
 
-## Note: `U8g2` library Works too
+## Note: `U8g2` library Works better with many boards
+
+https://github.com/olikraus/u8g2/wiki/u8g2reference
 
 ### Other Optional References:  
 * https://code.google.com/archive/p/u8glib  
